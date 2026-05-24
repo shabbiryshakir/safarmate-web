@@ -1,0 +1,192 @@
+{
+  "ui": {
+    "appTitle": "Safar Ahkaam",
+    "langToggle": "عربي",
+    "btnYes": "Yes",
+    "btnNo": "No",
+    "btnReset": "Reset Journey",
+    "btnStart": "Begin Journey",
+    "sum_dist": "Over 12 miles",
+    "sum_mode": "Mode:",
+    "opt_car": "Car / Taxi",
+    "opt_plane_ship": "Airplane / Ship",
+    "opt_train_bus": "Train / Bus",
+    "err_distance": "A journey under 12 miles does not mandate Qasr. You remain Muqeem.",
+    "err_property_land": "A flat without a land share does not qualify as Milk for becoming Muqeem.",
+    "opt_depart_before_shafa": "Before Dawn (Shafa)",
+    "opt_depart_shafa_zawal": "Between Dawn & Zawal",
+    "opt_depart_after_zawal": "After Zawal",
+    "btn_left_house": "Yes, I have left my house",
+    "opt_inside": "Inside boundary",
+    "opt_outside": "Outside boundary",
+    "dash_standby_title": "Standby: MUQEEM",
+    "dash_standby_msg": "You remain Muqeem. Qasr begins the exact moment your transport departs the boundary.",
+    "btn_departed": "I have physically departed now",
+    "dash_transit_title": "In Transit: MUSAFIR",
+    "dash_transit_msg": "Your journey has begun. You must pray Qasr (2 Rakats).",
+    "btn_arrived": "I have arrived at my destination",
+    "btn_cancel_journey": "I am turning back (Cancel Journey)",
+    "opt_p_property": "🏠 I own property here",
+    "opt_p_10days": "🗓️ I intend to stay 10 days or more",
+    "opt_p_mahram": "👨‍👩‍👧 I am meeting a Mahram here",
+    "opt_p_brief": "⏱️ I am just visiting briefly",
+    "opt_p_guide": "❓ I'm not sure / Guide Me",
+    "m_parents": "Parents/Grandparents",
+    "m_kids": "Children",
+    "m_siblings": "Siblings",
+    "m_uncles": "Uncles/Aunts",
+    "m_spouse": "Spouse",
+    "m_none": "None / In-laws / Cousins",
+    "sum_status": "Active Status",
+    "status_muqeem": "MUQEEM",
+    "status_musafir": "MUSAFIR",
+    "action_muqeem": "Pray Full (4 Rakats)",
+    "action_musafir": "Pray Qasr (2 Rakats)",
+    "q_met_now": "Pending: Have you met your Mahram face-to-face now?",
+    "btn_met": "Yes, we met just now",
+    "q_farz_now": "Pending: Have you prayed 1 Farz on your property now?",
+    "btn_farz_yes": "Yes, I have prayed 1 Farz",
+    "roza_today": "Today's Fast: ",
+    "roza_valid": "Valid",
+    "roza_broken": "Broken / Missed",
+    "roza_tomorrow": "Tomorrow's Fast: ",
+    "roza_tom_musafir": "Do not fast (Musafir)",
+    "roza_tom_muqeem": "Must fast (Muqeem)",
+    "btn_change_plans": "Update / Change Plans",
+    "btn_30days": "⏱️ I stayed 30 consecutive days",
+    "btn_mahram_left": "🚪 Mahram left early",
+    "btn_10days_left": "🚪 Leaving before 10 days",
+    "opt_mahram_before": "Yes, before 5 Farz (You are Musafir now. Redo past prayers as Qasr)",
+    "opt_mahram_after": "No, after 5 Farz (You are Musafir now. Past prayers remain valid)",
+    "opt_10d_avoidable": "Avoidable (You are Musafir. Redo prayers as Qasr & Fasts)",
+    "opt_10d_unavoid": "Unavoidable (You are Musafir now, but past prayers/fasts are valid)"
+  },
+  "ASK_DISTANCE": {
+    "question_en": "Is the boundary of your destination city over 24 miles away from the boundary of your current city? or 12 miles away (24 miles round trip) if you are returning?",
+    "question_alkanz": "تمارا ككام نا حد سي بيجا ككام نا حد لكك ٢٤ ميل ني مسافة ؛؟ يا كه ١٢ ميل دور ؛ اككر ولوا نو ارادة هوئي؟ (٢٤ ميل round trip)",
+    "fiqhExplanation_en": "The journey must be strictly greater than 12 miles (or a 24-mile round trip). If you travel this distance, Safar rules apply even if you return the same day.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778227689512-1st.png"
+  },
+  "ASK_RAMADAN": {
+    "question_en": "Is it the month of Ramadan (or an obligatory fast)?",
+    "question_alkanz": "کیا یہ ماہِ رمضان (یا فرض روزے) کا وقت ہے؟",
+    "fiqhExplanation_en": "Fasting rules require precise tracking of Shafa and Zawal times during the month of Ramadan.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": null
+  },
+  "ASK_DEPART_TIME": {
+    "question_en": "When did you (or will you) physically leave?",
+    "question_alkanz": "آپ گھر یا شہر کی حد سے کب نکلے (یا نکلیں گے)؟",
+    "fiqhExplanation_en": "Your fasting rule depends on the exact time you cross the city boundary. Leaving before Dawn (Shafa) or after Zawal generally protects the fast. Leaving between them means your fast depends entirely on your arrival time at the destination.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": null
+  },
+  "ASK_TRANSPORT": {
+    "question_en": "How are you traveling today?",
+    "question_alkanz": "تمہارے سفر کی سواری کیا ہے؟",
+    "fiqhExplanation_en": "A car triggers Safar immediately upon leaving home, while trains/planes depend on the station's location relative to the city boundary.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": null
+  },
+  "ASK_CAR_DEPARTURE": {
+    "question_en": "Have you started your journey and left your house?",
+    "question_alkanz": "کیا آپ نے سفر شروع کر دیا ہے اور گھر سے نکل چکے ہیں؟",
+    "fiqhExplanation_en": "For a personal vehicle, you become a Musafir the exact moment you depart your home.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778229333598-Screenshot-2026-05-08-at-12.33.49---PM.png"
+  },
+  "ASK_HADD": {
+    "question_en": "Is the Airport/Station located inside your town's boundary (Hadd)?",
+    "question_alkanz": "کیا اسٹیشن/ایئرپورٹ شہر کی حد کے اندر ہے؟",
+    "fiqhExplanation_en": "The 'Hadd' (boundary) is strictly where the continuous residential buildings of your city end. Do NOT use municipal borders, toll booths, or your front door. If your station/airport is surrounded by the city's continuous buildings, choose 'Inside'.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778229343073-Screenshot-2026-05-08-at-12.34.37---PM.png"
+  },
+  "ASK_PILLAR_MENU": {
+    "question_en": "You have arrived. Which of these applies to your stay here?",
+    "question_alkanz": "تم منزل پر پہنچ گئے ہو۔ ان میں سے کیا تمہاری حالت ہے؟",
+    "fiqhExplanation_en": "To become a 'Muqeem' (resident) at your destination and pray full Namaz, you must satisfy one of these specific Fiqh pillars.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778229875588-Screenshot-2026-05-08-at-12.42.31---PM.png"
+  },
+  "ASK_PROPERTY": {
+    "question_en": "Do you own property here?",
+    "question_alkanz": "کیا یہاں تمہاری کوئی اپنی ملک ہے؟",
+    "fiqhExplanation_en": "You must own a property in the destination city to use this pillar.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778229909148-Screenshot-2026-05-08-at-12.42.54---PM.png"
+  },
+  "ASK_PROPERTY_FLAT": {
+    "question_en": "Is this property an apartment/flat?",
+    "question_alkanz": "کیا یہ پراپرٹی فلیٹ ہے؟",
+    "fiqhExplanation_en": "Flats and apartments have specific rulings regarding land ownership.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778230014701-Screenshot-2026-05-08-at-12.45.58---PM.png"
+  },
+  "ASK_PROPERTY_LAND": {
+    "question_en": "Do you legally own a share of the land underneath this flat?",
+    "question_alkanz": "کیا اس فلیٹ کی زمین میں تمہارا قانونی حصہ ہے؟",
+    "fiqhExplanation_en": "You must legally own a share of the land itself. Renting an apartment or owning a flat without legal land share does not fulfill the Fiqh requirement for property.",
+    "fiqhExplanation_alkanz": "بغیر زمین کے حصے کے فلیٹ ملک میں شمار نہیں ہوتا۔",
+    "fiqhImage": "1778230020369-Screenshot-2026-05-08-at-12.46.12---PM.png"
+  },
+  "ASK_PROPERTY_FARZ": {
+    "question_en": "Have you performed at least one Farz prayer on this property?",
+    "question_alkanz": "کیا تم نے اس ملک پر ایک فرض نماز پڑھ لی ہے؟",
+    "fiqhExplanation_en": "A property does not automatically make you Muqeem. You must pray at least one Farz Namaz within its boundary to activate it.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778229982935-Screenshot-2026-05-08-at-12.42.54---PM.png"
+  },
+  "ASK_10_DAYS": {
+    "question_en": "Do you intend to reside here for 10 full days (until at least {date})? \n\nNote: It is 10 calendar days, not 50 prayers. You can leave anytime after this date. If you are unsure of your plans, do not make this Niyyat. You will remain Musafir for up to 30 days.",
+    "question_alkanz": "کیا تمہارا یہاں پورے 10 دن رکنے کا ارادہ ہے ({date} تک)؟ \n\nنوٹ: یہ کیلنڈر کے 10 دن ہیں، 50 نمازوں کا حساب نہیں۔ اس تاریخ کے بعد آپ جب چاہیں نکل سکتے ہیں۔ اگر آپ کو پکا ارادہ نہیں ہے تو نیت نہ کریں، آپ 30 دن تک مسافر ہی رہیں گے۔",
+    "fiqhExplanation_en": "Intending to stay continuously in one specific city boundary for 10 full days forces the Muqeem status.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522633532-Screenshot-2026-05-11-at-3.12.14---PM.png"
+  },
+  "ASK_MAHRAM_CAT": {
+    "question_en": "Which resident Mahram are you meeting?",
+    "question_alkanz": "تم کونسے محرم رشتہ دار سے مل رہے ہو؟",
+    "fiqhExplanation_en": "Only specific blood relatives (Usool/Furoo, siblings, or parents' siblings like Kaka/Mama/Masi/Fui) and spouses establish a Watan. Cousins or in-laws do not qualify.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522609334-Screenshot-2026-05-09-at-3.58.49---PM.png"
+  },
+  "ASK_MAHRAM_FACE": {
+    "question_en": "Have you met them face-to-face yet?",
+    "question_alkanz": "کیا ان سے روبرو ملاقات ہو گئی ہے؟",
+    "fiqhExplanation_en": "The Muqeem status is strictly activated the moment you physically meet the Mahram face-to-face, not just by entering the city.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522600947-Screenshot-2026-05-09-at-3.57.57---PM.png"
+  },
+  "ASK_MAHRAM_5FARZ": {
+    "question_en": "Will you stay in this town for the duration of at least 5 Farz prayers?",
+    "question_alkanz": "کیا تم اس شہر میں کم از کم 5 فرض نماز کے وقت تک رکو گے؟",
+    "fiqhExplanation_en": "You must have the firm intention to stay in the same city as the Mahram for the duration of at least 5 Farz prayers.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522588663-Screenshot-2026-05-09-at-3.57.38---PM.png"
+  },
+  "ASK_ARRIVE_TIME": {
+    "question_shafa_en": "Did you enter the town boundary before Dawn (Shafa)?",
+    "question_shafa_alkanz": "کیا آپ شفعہ (فجر) سے پہلے حد میں داخل ہو گئے تھے؟",
+    "question_zawal_en": "Did you arrive before Zawal?",
+    "question_zawal_alkanz": "کیا آپ زوال سے پہلے منزل پر پہنچے؟",
+    "fiqhExplanation_en": "If you arrive at a destination where you become Muqeem BEFORE Zawal (or Shafa depending on your intent), your fast is saved. If you arrive after, it breaks.",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": null
+  },
+  "ASK_EXC_MAHRAM": {
+    "question_en": "Did the Mahram leave the town before you completed 5 Farz prayers?",
+    "question_alkanz": "کیا محرم 5 فرض نماز مکمل ہونے سے پہلے شہر سے چلے گئے؟",
+    "fiqhExplanation_en": "",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522549884-Screenshot-2026-05-11-at-3.08.53---PM.png"
+  },
+  "ASK_EXC_10DAYS": {
+    "question_en": "Was leaving before 10 days avoidable or unavoidable?",
+    "question_alkanz": "کیا 10 دن سے پہلے جانا مجبوری (Unavoidable) تھا یا ارادتاً (Avoidable)؟",
+    "fiqhExplanation_en": "",
+    "fiqhExplanation_alkanz": "",
+    "fiqhImage": "1778522523921-Screenshot-2026-05-11-at-3.10.53---PM.png"
+  }
+}

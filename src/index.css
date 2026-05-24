@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Alkanz';
   src: url('/fonts/alkanz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -57,6 +60,11 @@ body {
   flex-direction: column;
   position: relative;
   padding-bottom: 80px; /* Space for Bottom Nav */
+}
+
+.app-wrapper.admin-open {
+  max-width: 100%;
+  padding-bottom: 0;
 }
 
 /* App Header */

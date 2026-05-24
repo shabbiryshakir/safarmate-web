@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Backend server (dev only, not deployed)
+server.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

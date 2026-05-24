@@ -118,3 +118,66 @@ export function evaluateJourney(data) {
   
   return { step: 'DASHBOARD', status: finalDashboardStatus, rozaToday, rozaTomorrow };
 }
+
+// ... (keep your existing evaluateJourney function exactly as it is) ...
+
+/**
+ * GENERATES THE PLAIN-TEXT AUDIT TRAIL FOR THE VERDICT SCREEN
+ */
+export function generateAuditTrail(data) {
+  let narrative = [];
+
+  if (data.isOver12Miles === false) {
+    return "You indicated your destination is less than 12 miles away (or less than a 24-mile round trip). Safar rules do not apply.";
+  }
+
+  // 1. Distance & Transport
+  let transportStr = data.transportMode === 'car' ? 'Car' : data.transportMode === 'plane_ship' ? 'Flight/Ship' : 'Train/Bus';
+  narrative.push(`You are traveling over 12 miles via ${transportStr}.`);
+
+  // 2. Departure Status
+  if (data.transportMode === 'car' && data.hasDeparted) {
+    narrative.push("You have departed your home.");
+  } else if (data.transportMode !== 'car') {
+    if (data.isInsideHadd) {
+      narrative.push(`Your station/airport is INSIDE the city boundary.`);
+    } else if (data.isInsideHadd === false) {
+      narrative.push(`Your station/airport is OUTSIDE the city boundary.`);
+    }
+  }
+
+  // 3. Ramadan & Timing
+  if (data.isRamadan) {
+    let timeStr = "";
+    if (data.departTime === 'before_shafa') timeStr = "before Dawn (Shafa)";
+    if (data.departTime === 'shafa_to_zawal') timeStr = "between Dawn and Zawal";
+    if (data.departTime === 'after_zawal') timeStr = "after Zawal";
+    
+    // DYNAMIC ARRIVAL LIMIT TEXT
+    let arriveStr = "";
+    let limitName = (data.arrivalPillarChoice === '10days' || data.intends10Days) ? "Dawn (Shafa)" : "Zawal";
+    
+    if (data.arriveTime === 'before_limit') arriveStr = ` and arrived before ${limitName}`;
+    if (data.arriveTime === 'after_limit') arriveStr = ` and arrived after ${limitName}`;
+
+    narrative.push(`You are traveling during Ramadan, departing ${timeStr}${arriveStr}.`);
+  }
+
+  // 4. Arrival Intent
+  if (data.arrivalPillarChoice) {
+    if (data.arrivalPillarChoice === 'brief') {
+      narrative.push("You intend a brief visit (less than 10 days) at your destination.");
+    } else if (data.arrivalPillarChoice === '10days' || data.intends10Days) {
+      narrative.push("You intend to stay for 10 full days at your destination.");
+    } else if (data.arrivalPillarChoice === 'property') {
+      let landStr = data.hasLandShare ? "with a legal land share" : "without a legal land share";
+      narrative.push(`You are traveling to a property you own (${landStr}).`);
+    } else if (data.arrivalPillarChoice === 'mahram') {
+      let catStr = data.mahramCategory ? data.mahramCategory.toUpperCase() : "a Mahram";
+      let farzStr = data.mahramStay5Farz ? "and intend to stay for at least 5 Farz prayers" : "but will stay for less than 5 Farz prayers";
+      narrative.push(`You are traveling to visit ${catStr} ${farzStr}.`);
+    }
+  }
+
+  return narrative.join(" ");
+}
