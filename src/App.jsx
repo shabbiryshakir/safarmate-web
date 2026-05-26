@@ -193,7 +193,7 @@ export default function App() {
             {text && <p style={{ margin: 0, fontSize: '0.85rem', color: '#0369a1', lineHeight: '1.4', ...fontStyle }}>{text}</p>}
             {image && (
               <img
-src={`${import.meta.env.BASE_URL}images/${image}`}
+                src={`images/${image}`}
                 alt="Fiqh reference"
                 style={{ marginTop: text ? '12px' : 0, width: '100%', borderRadius: '6px', border: '1px solid #bae6fd', display: 'block' }}
               />
